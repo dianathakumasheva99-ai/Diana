@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- saved from url=(0207)file:///C:/Users/User/Desktop/%D0%94%20%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81/%D0%91%D0%9A%D0%98/%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8/HTML/%D0%BC%D0%BE%D0%B8%20%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%86.html#gallery -->
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style (2).css">
+    <title>Портфолио | Тхакумашева Диана</title>
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <a href="index.html" class="logo">Портфолио</a>
+            <nav>
+                <ul>
+                    <li><a href="обомне.html">Обо мне</a></li>
+                    <li><a href="галерея.html">Галерея</a></li>
+                    <li><a href="index.html">Портфолио</a></li>
+                       <li><a href="Периоды творчества.html">Период творчества </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>Тхакумашева Диана</h1>
+            <p>Хочешь усладу для глаз? Нажимай сюда ⇩</p>
+            <a href="" class="btn">Смотреть работы</a>
+        </div>
+    </section>
+
+    <section id="themes" class="reveal">
+        <div class="container">
+            <h2>Символы, которые описывают меня в работе</h2>
+            <div class="themes-grid">
+                <div class="theme-card">
+                    <div class="icon-placeholder">🤙</div>
+                    <h3>- Если будут проблемы… <br>У тебя ведь мой номер есть?<br>- Есть!<br>- Удали...</h3>
+                    <p>Сарказм — вторая моя сильная сторона</p>
+                </div>
+                <div class="theme-card">
+                    <div class="icon-placeholder">🤝</div>
+                    <h3>Всегда за любой кипиш</h3>
+                    <p>Движ? Класс</p>
+                </div>
+                <div class="theme-card">
+                    <div class="icon-placeholder">🧠</div>
+                    <h3>При мозгах</h3>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="eras" class="reveal">
+        <div class="container">
+            <h2>Годы жизни</h2>
+            <div class="era-grid">
+                <div class="era-card">
+                    <h3>Ранние годы</h3>
+                    <div class="era-years">2008 – 2024 </div>
+                    <ul>
+                        <li>Детский сад</li>
+                        <li>Школа</li>
+                        <li>Музыкальная школа</li>
+                    </ul>
+                </div>
+                <div class="era-card popular">
+                    <h3>Подростковый период</h3>
+                    <div class="era-years">2024 – 2027</div>
+                    <ul>
+                        <li>Поступление в колледж</li>
+                        <li>Должность куратора</li>
+                        <li>Первая практика</li>
+                    </ul>
+                </div>
+                <div class="era-card">
+                    <h3>Позднее творчество</h3>
+                    <div class="era-years">2027 – 2040</div>
+                    <ul>
+                        <li>Стать военным кинологом</li>
+                        <li>Выйти замуж</li>
+                        <li>Поехать в Испанию на ЧМ по футболу с мужем</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact-section reveal">
+        <div class="container">
+            <h2>Закажи у меня сайт</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Ваше имя" required="">
+                <input type="email" placeholder="Ваш Email" required="">
+                <button type="submit" class="btn">Заказать</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>2026 · Тхакумашева Диана · Дата публикации: 14 ноября 2026 года</p>
+        </div>
+    </footer>
+
+
+<script>
+// появление секций при прокрутке
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target); // анимировать один раз
+        }
+    });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+</script>
+
+</body></html>
